@@ -13,10 +13,6 @@ exports.default = function CJumpLookup(mnemonic) {
     if (lookupTable.hasOwnProperty(trimmedMnemonic)) {
         return lookupTable[trimmedMnemonic];
     }
-    
-    return [0,0,0];
-}
 
-function isNumeric(n) {
-  return !isNaN(parseFloat(n)) && isFinite(n);
+    return [0,0,0];
 }
